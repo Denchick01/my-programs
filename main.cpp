@@ -125,13 +125,13 @@ void EnterParam (double par[])
 //! @function Test
 void Test ()
 {
+    double x1 = 0;
+    double x2 = 0;
+    double arga[5] = {0,1,1,4.6,2.3};
+    double argb[5] = {1,4.5,3,0,5};
+    double argc[5] = {2,2,7.7,0,2};
     for (int i=0; i <= 4; i++)
     {
-        double x1 = 0;
-        double x2 = 0;
-        double arga[5] = {0,1,1,4.6,2.3};
-        double argb[5] = {1,4.5,3,0,5};
-        double argc[5] = {2,2,7.7,0,2};
         printf ("a = %2.1f b = %2.1f c = %2.1f  ",arga[i], argb[i], argc[i]);
         int nRoots = SqEquation (arga[i], argb[i], argc[i], &x1, &x2);
         OutResult (nRoots, x1, x2);
