@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <math.h>
+#include <conio.h>
 
 void Test ();
 void EnterParam (double par[]);
@@ -27,6 +28,7 @@ int main ()
         //int nRoots = SqEquation (par[0], par[1], par[2], &x1, &x2);
         //OutResult (nRoots, x1, x2);
     }
+    getch ();
 }
 
 //! @function SqEquation
@@ -136,6 +138,5 @@ void Test ()
         int nRoots = SqEquation (arga[i], argb[i], argc[i], &x1, &x2);
         OutResult (nRoots, x1, x2);
     }
-    system("PAUSE");
 }
 
